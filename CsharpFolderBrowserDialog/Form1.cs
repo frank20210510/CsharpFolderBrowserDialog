@@ -21,6 +21,13 @@ namespace CsharpFolderBrowserDialog
         {
             InitializeComponent();
         }
+        //https://stackoverflow.com/questions/228038/best-way-to-reverse-a-string
+        public static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -74,18 +81,27 @@ namespace CsharpFolderBrowserDialog
                     if (b.Length > 0)
                         val = long.Parse(b);
 
+                    string reverseStr = Reverse(file);
 
-                    
+                    reverseStr.IndexOf('\\');
+
+
+                    string theFileName = System.IO.Path.GetFileName(file);
+
+                    int index = reverseStr.IndexOf(@"\");
+
+                    string trimmedWithoutDot = Reverse(reverseStr.Substring(0, index));
+
 
 
                     if (b == "") 
                     {
-                        b += "第" +  iA.ToString() + "###" + file;
+                        b += "第" +  iA.ToString() + "檔案名稱   " + trimmedWithoutDot;
                     }
 
                     if (c == "")
                     {
-                        c += "第" + iA.ToString() + "###" + file;
+                        c += "第" + iA.ToString() + "檔案名稱   " + trimmedWithoutDot;
                     }
 
                     textBox2.Text = textBox2.Text + b + "\r\n";

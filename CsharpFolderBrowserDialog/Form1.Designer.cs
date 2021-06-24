@@ -33,6 +33,7 @@ namespace CsharpFolderBrowserDialog
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -50,7 +51,7 @@ namespace CsharpFolderBrowserDialog
             // 
             this.textBox1.Location = new System.Drawing.Point(27, 72);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(535, 22);
+            this.textBox1.Size = new System.Drawing.Size(944, 22);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
@@ -60,24 +61,34 @@ namespace CsharpFolderBrowserDialog
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(241, 712);
+            this.textBox2.Size = new System.Drawing.Size(461, 712);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox3.Location = new System.Drawing.Point(321, 113);
+            this.textBox3.Location = new System.Drawing.Point(510, 113);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(241, 712);
+            this.textBox3.Size = new System.Drawing.Size(461, 712);
             this.textBox3.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(43, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 12);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "FRANK";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 837);
+            this.ClientSize = new System.Drawing.Size(1009, 837);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -95,6 +106,7 @@ namespace CsharpFolderBrowserDialog
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label1;
     }
 }
 
