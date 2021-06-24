@@ -80,12 +80,12 @@ namespace CsharpFolderBrowserDialog
 
                     if (b == "") 
                     {
-                        b += "第" +  iA.ToString() + "#####################";
+                        b += "第" +  iA.ToString() + "###" + file;
                     }
 
                     if (c == "")
                     {
-                        c += "第" + iA.ToString() + "#####################";
+                        c += "第" + iA.ToString() + "###" + file;
                     }
 
                     textBox2.Text = textBox2.Text + b + "\r\n";
