@@ -19,7 +19,7 @@ namespace CsharpFolderBrowserDialog
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();  //Hello Frank
         }
         //https://stackoverflow.com/questions/228038/best-way-to-reverse-a-string
         public static string Reverse(string s)
